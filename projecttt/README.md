@@ -34,9 +34,6 @@ Sends live location
 Notifies trusted contacts
 Activates alarm
 AI chatbot provides guidance if needed
-⚙️ Installation & Setup
-# Clone the repository
-git clone https://github.com/your-username/project-name.git
 
 # Navigate to project folder
 cd project-name
