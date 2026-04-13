@@ -43,14 +43,7 @@ npm install
 
 # Start the app
 npx expo start
-📸 Screenshots (Optional but Recommended)
 
-Add screenshots of:
-
-Home screen
-SOS button
-Map view
-Chatbot
 🔐 Permissions Required
 Location access
 Contacts access
