@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "women-safety-app",
+    "slug": "women-safety-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location for emergency services"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sosangel.womensafetyapp",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to location to share your location in emergency situations",
+        "NSLocationAlwaysUsageDescription": "This app needs access to location to share your location in emergency situations",
+        "NSContactsUsageDescription": "This app needs access to contacts to manage your trusted contacts",
+        "NSMicrophoneUsageDescription": "This app needs access to microphone for scream detection feature"
+      }
+    },
+    "android": {
+      "package": "com.sosangel.womensafetyapp",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "SEND_SMS",
+        "READ_CONTACTS",
+        "WRITE_CONTACTS",
+        "RECORD_AUDIO",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

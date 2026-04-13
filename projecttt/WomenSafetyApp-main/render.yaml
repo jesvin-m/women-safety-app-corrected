@@ -1,0 +1,19 @@
+# Render Blueprint: deploy the emergency Socket.IO + Express API.
+# In the Render dashboard, set the service "Root Directory" to the folder that contains this file
+# (usually the app repo root). If your Git repo root is *above* `WomenSafetyApp-main`, change `rootDir` below.
+services:
+  - type: web
+    name: women-safety-emergency-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      # Add these as secret env vars in the Render dashboard (do not commit real values):
+      # TWILIO_ACCOUNT_SID
+      # TWILIO_AUTH_TOKEN
+      # TWILIO_PHONE_NUMBER
