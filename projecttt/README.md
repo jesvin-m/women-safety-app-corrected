@@ -1,63 +1,65 @@
-# Authentication System with Next.js and NextAuth.js
+🛡️ Women Safety App – Smart Emergency Platform
+📌 Overview
 
-This is a modern authentication system built with Next.js, NextAuth.js, and Tailwind CSS. It supports OAuth authentication with Google and GitHub providers.
+Women Safety App is a mobile application built using React Native and Expo designed to provide real-time safety assistance.
+It enables users to trigger emergency alerts, share live location, and access intelligent safety features during critical situations.
 
-## Features
+🚀 Features
+🚨 SOS Emergency Alert – Instantly trigger alerts and notify trusted contacts
+📍 Live Location Tracking – Share real-time location with emergency contacts
+🗺️ Map Integration – View and navigate using integrated maps
+👥 Trusted Contacts – Add and manage emergency contacts
+📲 Gesture Detection – Trigger SOS by shaking the device
+🎤 Scream Detection – Automatically detect distress sounds and activate alerts
+🤖 AI Chatbot – Provides safety tips and assistance
+👤 Profile Management – Store personal and medical information
+🛠️ Tech Stack
+Frontend: React Native
+Framework: Expo
+Language: JavaScript
+APIs & Libraries:
+Expo Location
+Expo Contacts
+Expo AV (Audio)
+React Navigation
+React Native Paper
+📱 How It Works
+User registers and adds trusted contacts
+In an emergency, user can:
+Press SOS button
+Shake device (gesture detection)
+Trigger via scream detection
+App:
+Sends live location
+Notifies trusted contacts
+Activates alarm
+AI chatbot provides guidance if needed
+⚙️ Installation & Setup
+# Clone the repository
+git clone https://github.com/your-username/project-name.git
 
-- OAuth authentication with Google and GitHub
-- Modern and responsive UI with Tailwind CSS
-- TypeScript support
-- Secure session management
+# Navigate to project folder
+cd project-name
 
-## Setup Instructions
+# Install dependencies
+npm install
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+# Start the app
+npx expo start
+📸 Screenshots (Optional but Recommended)
 
-2. Set up OAuth credentials:
+Add screenshots of:
 
-   ### Google OAuth
-   1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
-   2. Create a new project or select an existing one
-   3. Enable the Google+ API
-   4. Go to Credentials and create an OAuth 2.0 Client ID
-   5. Add `http://localhost:3000/api/auth/callback/google` to the authorized redirect URIs
-   6. Copy the Client ID and Client Secret to your `.env.local` file
+Home screen
+SOS button
+Map view
+Chatbot
+🔐 Permissions Required
+Location access
+Contacts access
+Microphone access
 
-   ### GitHub OAuth
-   1. Go to [GitHub Developer Settings](https://github.com/settings/developers)
-   2. Create a new OAuth App
-   3. Add `http://localhost:3000/api/auth/callback/github` to the callback URL
-   4. Copy the Client ID and Client Secret to your `.env.local` file
+👨‍💻 Author
 
-3. Update the `.env.local` file with your credentials:
-   ```
-   NEXTAUTH_URL=http://localhost:3000
-   NEXTAUTH_SECRET=your-secret-key-here
-   GOOGLE_CLIENT_ID=your-google-client-id
-   GOOGLE_CLIENT_SECRET=your-google-client-secret
-   GITHUB_ID=your-github-client-id
-   GITHUB_SECRET=your-github-client-secret
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Available Routes
-
-- `/login` - Login page
-- `/register` - Registration page
-- `/api/auth/*` - NextAuth.js API routes
-
-## Security Notes
-
-- Never commit your `.env.local` file to version control
-- Keep your OAuth credentials secure
-- Use HTTPS in production
-- Generate a strong NEXTAUTH_SECRET for production use 
+Your Name
+GitHub: https://github.com/jesvin-m
